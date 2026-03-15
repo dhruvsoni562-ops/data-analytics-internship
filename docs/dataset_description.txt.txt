@@ -1,0 +1,20 @@
+Dataset Name: Superstore Sales Dataset
+
+Total Rows: 51291
+
+Columns:
+- order_date
+- customer_name
+- city
+- category
+- product_name
+- sales
+- profit
+
+Cleaning Steps Completed:
+1. Removed duplicate rows
+2. Corrected order date format
+3. Standardized column names
+4. Checked for missing values
+
+This dataset will be used for Retail & E-commerce dashboard analysis.
