@@ -1,3 +1,9 @@
 -- Total Sales
 SELECT SUM(sales) AS total_sales
 FROM superstore_cleaned;
+
+-- Sales by City
+SELECT city, SUM(sales) AS total_sales
+FROM superstore
+GROUP BY city
+ORDER BY total_sales DESC;
