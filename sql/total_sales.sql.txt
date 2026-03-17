@@ -20,3 +20,10 @@ SELECT category, SUM(sales) AS total_sales
 FROM superstore
 GROUP BY category
 ORDER BY total_sales DESC;
+
+-- Monthly Sales Trend
+SELECT strftime('%Y-%m', order_date) AS month, 
+       SUM(sales) AS total_sales
+FROM superstore
+GROUP BY month
+ORDER BY month;
