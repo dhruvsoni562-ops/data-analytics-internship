@@ -27,3 +27,8 @@ SELECT strftime('%Y-%m', order_date) AS month,
 FROM superstore
 GROUP BY month
 ORDER BY month;
+
+SELECT category, SUM(profit) AS total_profit
+FROM superstore
+GROUP BY category
+ORDER BY total_profit DESC;
