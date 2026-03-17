@@ -14,3 +14,9 @@ FROM superstore
 GROUP BY product_name
 ORDER BY total_sales DESC
 LIMIT 10;
+
+-- Sales by Category
+SELECT category, SUM(sales) AS total_sales
+FROM superstore
+GROUP BY category
+ORDER BY total_sales DESC;
